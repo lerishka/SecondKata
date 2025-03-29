@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: 'TT Lakes';
+    color: #1B1C21;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 24px;
+    padding-top: 18px;
+    padding-bottom: 32px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+.menu__header-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+    align-items: center;
+}
+
+.menu__header-first-part {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.menu__header-button, .menu__footer-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #FF3E79;
+}
+
+/*кнопки-начало*/
+.closing-button {
+    background-image: url('./icons/closing-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.search-button {
+    background-image: url('./icons/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.call-button {
+    background-image: url('./icons/call-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.chat-button {
+    background-image: url('./icons/chat-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.profile-button {
+    background-image: url('./icons/profile-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+/*кнопки-конец*/
+
+/*обнуляю отступы и маркеры списка*/
+.list {
+    -webkit-padding-start: 0; 
+    padding-left: 0; 
+    list-style: none;
+}
+
+.menu__item{
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.menu__item.active {
+position: relative;
+}
+
+.menu__item.active::before {
+position: absolute;
+content: '';
+width: 4px;
+height: 32px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+top: -8px;
+left: -24px;
+background-color: #41F6D7;
+}
+
+.list {
+    margin: 0;
+}
+
+.menu__footer-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.menu__footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.menu__footer-number{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.menu__footer-languages {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 32px;
+}
+
+.menu__footer-language{
+    font-weight: 500;
+}
+
+.active{
+    color: #7E7E82
+}
