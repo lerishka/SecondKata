@@ -47,6 +47,7 @@ body {
     padding-bottom: 32px;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
     -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    box-sizing: border-box;
 }
 
 .menu__header-buttons {
@@ -161,11 +162,11 @@ background-color: #41F6D7;
 .menu__footer-languages {
     display: flex;
     gap: 7px;
-    margin-bottom: 32px;
 }
 
 .menu__footer-language{
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 .active{
