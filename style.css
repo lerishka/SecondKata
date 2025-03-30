@@ -126,6 +126,10 @@ body {
     font-weight: 500;
 }
 
+.menu__item:not(.active), .menu__footer-language:not(.active) {
+    cursor: pointer;
+}
+
 .menu__item.active {
 position: relative;
 }
